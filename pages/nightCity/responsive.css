@@ -1,0 +1,39 @@
+/* nightCity/responsive.css */
+
+@media screen and (min-width: 680px) {
+  .text-container {
+    margin-top: 6px;
+    font-size: 0.9em;
+    z-index: 1;
+  }
+
+  #mainImage {
+    max-height: 95vh;
+    margin-top: 7px;
+  }
+
+  .thumbnails-container {
+    margin-top: -7em;
+    padding-left: 1em;
+  }
+
+  .thumbnail {
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    width: 200px;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.02);
+  }
+
+  #img04,
+  #img08 {
+    display: block;
+  }
+
+  .scroll-indicator {
+    cursor: pointer;
+    font-size: 34px;
+  }
+}

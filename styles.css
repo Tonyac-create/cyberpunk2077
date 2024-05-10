@@ -1,0 +1,71 @@
+/* styles.css */
+
+a {
+  font-size: inherit;
+}
+
+#content {
+  display: none;
+}
+
+#welcome-message-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  background-color: rgb(28, 39, 43);
+}
+
+#terminal {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#boot-text-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  min-height: 150px;
+}
+
+#boot-text {
+  color: lime;
+  white-space: pre-wrap;
+  font-size: 20px;
+  text-align: left;
+  overflow-y: auto;
+  filter: drop-shadow(0 0 5px lime);
+}
+
+#display-content {
+  color: lime;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.blinking-cursor {
+  color: lime;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+

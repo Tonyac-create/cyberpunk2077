@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      zoom="1"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1, user-scalable=no"
+    />
+    <title>Cyberpunk 2077</title>
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/includer.css" />
+    <script
+      src="https://unpkg.com/powerglitch@latest/dist/powerglitch.min.js"
+      defer
+    ></script>
+  </head>
+  <body
+    oncontextmenu="return false"
+    onselectstart="return false"
+    ondragstart="return false"
+  >
+    <div id="welcome-message-container">
+      <div id="terminal">
+        <div id="boot-text-container">
+          <p id="boot-text"></p>
+        </div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="background">
+        <img src="./assets/img/background.svg" id="background-logo" />
+      </div>
+      <header>
+        <div id="taskbar">
+          <div class="taskbar-left">
+            <button class="taskbar-button">
+              <img
+                class="taskbar-button-icon"
+                src="./assets/icons/favicon.png"
+              />
+            </button>
+          </div>
+
+          <div class="taskbar_center">
+            <p class="taskbar-text title">Vivez l'expérience ultime</p>
+          </div>
+
+          <div class="taskbar-right">
+            <p class="taskbar-text">
+              <span id="current-date">date</span>
+              <span id="current-time">time</span>
+            </p>
+          </div>
+        </div>
+      </header>
+      <ol id="desktop-icons-container"></ol>
+    </div>
+    <script type="module" src="scripts/welcomeMessage.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+    <script>
+      window.va =
+        window.va ||
+        function () {
+          (window.vaq = window.vaq || []).push(arguments);
+        };
+    </script>
+    <!-- <script defer src="/_vercel/insights/script.js"></script> -->
+  </body>
+</html>

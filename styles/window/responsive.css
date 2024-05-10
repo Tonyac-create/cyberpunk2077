@@ -1,0 +1,63 @@
+/* window/responsive.css */
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .window-container {
+    width: calc(100vw - 10px);
+    height: calc(90vh - 100px);
+    top: 10vh;
+    margin-bottom: 40px;
+    margin-top: 45px;
+  }
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(101vw - 35px);
+    height: calc(80vh - 100px);
+  }
+
+  .window-body {
+    height: calc(100% - 35px);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .window-container {
+    width: calc(100vw - 10px);
+    height: calc(100vh - 100px);
+    margin-bottom: 30px;
+  }
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(98.6vw - 26px);
+  }
+
+  .window-body {
+    width: 97%;
+    height: 92%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  .window-container {
+    width: calc(90vw - 10px);
+    height: calc(100vh - 100px);
+  }
+
+  .window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(89vw - 20px);
+  }
+
+  .window-body {
+    height: calc(97% - 30px);
+    width: 100%;
+  }
+}

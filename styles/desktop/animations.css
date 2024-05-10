@@ -1,0 +1,52 @@
+@keyframes taskbar-animation {
+  from {
+    -ms-transform: translate(0, -150%);
+    transform: translate(0, -150%);
+    opacity: 0;
+  }
+
+  to {
+    -ms-transform: translate(0, 0%);
+    transform: translate(0, 0%);
+    opacity: 1;
+  }
+}
+
+@keyframes background-in-animation {
+  from {
+    height: 150%;
+    width: 150%;
+    opacity: 1;
+  }
+
+  to {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@keyframes desktop-fade-in-animation {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes background-logo-in-animation {
+  from {
+    top: 0%;
+    opacity: 0;
+  }
+
+  to {
+    top: -50%;
+    opacity: 1;
+  }
+}

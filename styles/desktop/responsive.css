@@ -1,0 +1,53 @@
+/* responsive.css */
+
+@media screen and (max-width: 850px) {
+  #background-logo {
+    width: calc(794px / 2);
+    height: calc(337px / 2);
+  }
+
+  .taskbar-text.title {
+    font-size: 0.9em;
+  }
+
+  .taskbar-text {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    font-size: 0.7em;
+    line-height: 1.2;
+  }
+
+  .taskbar-right {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #desktop-icons-container {
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    margin: 20px auto;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #background-logo {
+    width: calc(794px / 2);
+    height: calc(337px / 2);
+  }
+
+  header {
+    visibility: collapse;
+  }
+
+  #desktop-icons-container {
+    height: 100%;
+    top: 5px;
+  }
+}
+

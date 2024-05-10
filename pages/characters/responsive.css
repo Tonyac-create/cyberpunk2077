@@ -1,0 +1,43 @@
+/* characters/responsive.css */
+
+@media screen and (min-width: 679px) {
+  .content-lines {
+    width: 94%;
+  }
+
+  .background-wrapper {
+    width: 50%;
+    top: 54%;
+    left: 0%;
+    right: 100%;
+    transform: translate(-0%, -55%);
+  }
+
+  .background-img {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 679px) {
+  .sliding-div {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 99.9%;
+    z-index: 100;
+    padding: 1em;
+  }
+
+  /* .image-part {
+    box-shadow: var(--glow-effect-top), var(--glow-effect-bottom),
+      inset 0 0 100px rgba(255, 0, 127, 0.5), var(--glow-effect-left);
+  }*/
+
+  /* .image-part {
+    display: none;
+  } */
+
+  #background-img {
+    filter: blur(0.5px) drop-shadow(2px 2px 2px var(--cyberpunk-pink))
+      contrast(0.9);
+  }
+}

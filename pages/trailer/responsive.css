@@ -1,0 +1,23 @@
+@media (min-width: 500px) and (max-width: 900px) {
+  .trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trailer iframe {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .trailer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .trailer iframe {
+    width: 100%;
+  }
+}

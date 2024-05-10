@@ -1,0 +1,136 @@
+/* nightCity/style.css */
+
+:root {
+  --border-radius: 8px;
+  --blur-level: 2em;
+  --inner-radius: 4px;
+  --background-window-element: rgba(20, 20, 20, 0.2);
+  --main-color: rgba(252, 255, 67, 1);
+}
+
+* {
+  font-family: "Blender Pro Book", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-rendering: optimizeLegibility;
+  color: rgb(205 199 195);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  padding-bottom: 5px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.content-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+
+.text-container {
+  position: absolute;
+  display: flex;
+  background-color: rgba(31, 39, 42, 0.75);
+  margin-bottom: 20px;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 15px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.55));
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 0.8em;
+  z-index: 1;
+}
+
+#mainImage {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+  transform: scale(1);
+  object-fit: cover;
+  object-position: 45%;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.55));
+  border-radius: 16px;
+}
+
+.main-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.thumbnails-container {
+  display: flex;
+  position: relative;
+  overflow-x: auto;
+  white-space: nowrap;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  padding-left: 60px;
+  padding-right: 10px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
+  scroll-behavior: smooth;
+  z-index: 1;
+  margin-top: -3em;
+}
+
+.thumbnail {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1;
+  border-radius: 16px;
+  border: 1px solid #000000;
+  border-right: 3px solid #000000;
+  border-bottom: 4px solid #000000;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.scroll-indicator {
+  position: absolute;
+  right: 0.1em;
+  top: 98%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: var(--main-color);
+  filter: blur(0.5px);
+  backdrop-filter: blur(1px);
+  padding-left: 10px;
+  padding-right: 5px;
+  animation: pulse 1.5s infinite;
+  z-index: 5;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.55));
+}
+
+#img04,
+#img08 {
+  display: none;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

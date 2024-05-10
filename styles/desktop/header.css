@@ -1,0 +1,104 @@
+/* header.css */
+
+#taskbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.taskbar-left {
+  position: absolute;
+  display: flex;
+  z-index: 2;
+}
+
+.taskbar_center {
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.taskbar-right {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.taskbar-app {
+  margin-left: 2px;
+}
+
+.taskbar-icon-active {
+  border: var(--border-width) solid var(--main-color);
+}
+
+.taskbar-icon-in {
+  animation: taskbar-icon-in cubic-bezier(0.38, 1.89, 0.24, 1) 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.taskbar-icon-out {
+  animation: taskbar-icon-out cubic-bezier(0.38, 1.89, 0.24, 1) 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.taskbar-button {
+  height: 100%;
+  background: transparent;
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  -moz-backdrop-filter: blur(0px);
+  -o-backdrop-filter: blur(0px);
+  border: var(--border-width) solid rgba(0, 0, 0, 0);
+  transition-duration: 200ms;
+  display: flex;
+  align-items: center;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: calc(var(--inner-radius) + 2px);
+}
+
+.taskbar-button:hover {
+  backdrop-filter: blur(var(--blur-level));
+  -webkit-backdrop-filter: blur(var(--blur-level));
+  -moz-backdrop-filter: blur(var(--blur-level));
+  -o-backdrop-filter: blur(var(--blur-level));
+  border: var(--border-width) solid var(--glass-color);
+  background-color: var(--glass-color);
+  cursor: pointer;
+}
+
+.taskbar-button-icon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  border-radius: var(--inner-radius);
+}
+
+.taskbar-title {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.taskbar-text.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+#current-date,
+#current-time {
+  pointer-events: none;
+  margin-right: 2px;
+  font-size: 0.9em;
+  font-weight: 800;
+  color: black;
+}

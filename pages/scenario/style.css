@@ -1,0 +1,99 @@
+/* scenario/style.css */
+
+:root {
+  --border-radius: 8px;
+  --blur-level: 2em;
+  --inner-radius: 4px;
+  --background-window-element: rgba(20, 20, 20, 0.2);
+}
+
+* {
+  font-family: "Blender Pro Book", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-rendering: optimizeLegibility;
+  color: rgb(205 199 195);
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  padding-bottom: 5px;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.text-logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+}
+
+.text-container {
+  display: block;
+  background-color: var(--background-window-element);
+  height: 22em;
+  margin-top: 6px;
+  margin-right: 10px;
+  border: 6px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.55));
+}
+
+.logo-container {
+  display: block;
+  align-self: center;
+  padding: 2.5em;
+  margin-right: 10px;
+}
+
+.image-scenario-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+  width: 50%;
+  max-width: 50%;
+  height: 100vh;
+  border-radius: 16px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+#img-scenario {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: var(--border-radius);
+}
+
+#img-scenario-logo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
+  border-radius: var(--border-radius);
+}
+
+#typewriter-text {
+  padding: 30px;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1em;
+}
