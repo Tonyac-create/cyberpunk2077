@@ -19,7 +19,7 @@
   .text-container::before {
     content: "";
     display: block;
-    height: 100px;
+    height: 200px;
     background-image: url("./scenario.webp");
     background-size: cover;
     background-position: center;

@@ -116,6 +116,7 @@ html {
   animation: pulse 1.5s infinite;
   z-index: 5;
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.55));
+  cursor: pointer;
 }
 
 #img04,
